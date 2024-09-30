@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root {
+            --primary-color: blue;
+            --secondary-color: green;
+        }
+
+        body {
+            color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+        }
+        p{
+            color: var(--secondary-color);
+        }
+        a{
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+<h1>this is using primary color</h1>
+<p>this paragraph is using secondary color</p>
+
+<a href="../index.html">home</a>
+</body>
+</html>
